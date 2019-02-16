@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Board Game</title>
+
+</head>
+<body>
+
+  <div class="info">
+    <p class="which-turn-it-is"></p>
+    <p class="life-points"></p>
+    <button class="newGame">New Game</button>
+    <p class="steps-left"></p>
+    <button id="skipTurn">End Turn</button>
+    --<button id="attack">Attack</button>--
+    <button id="defend">Defend</button>--
+  </div>
+
+  <div id="worldMap"></div>
+
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="renderGame.js"></script>
+  <script src="moviments.js"></script>
+  <script src="fighting.js"></script>
+</body>
+</html>

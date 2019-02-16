@@ -4,27 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="rules.css">
   <title>Board Game</title>
 
 </head>
 <body>
 
   <div class="info">
-    <p class="which-turn-it-is"></p>
-    <p class="life-points"></p>
-    <button class="newGame">New Game</button>
-    <p class="steps-left"></p>
-    <button id="skipTurn">End Turn</button>
-    --<button id="attack">Attack</button>--
-    <button id="defend">Defend</button>--
+    <p id="chapter"> Turn-based Board Game </p>
+    <p> For each turn, a player can move horizontally or vertically from one to three boxes.</p>
+    <p>To walk less then 3 blocks, you need to walk at least one block and click the End Turn button.</p>
+    <p>Each player begin with a bird weapon that can cause 10 points of damage.</p>
+    <p>If a player passes over a box containing a weapon, they leave their current weapon on site and replace it with the new one.</p>
+    <p>If players cross over adjacent squares (horizontally or vertically), a battle begins.</p>
+    <p>Each player attacks in turn.</p>
+    <p>As soon as the life points of a player (initially 100) falls to 0, they lose.</p>
+    <p>Click in the button above to go to the player area.</p>
+    <a href="game.html"><button id="rule">Game</button></a>
+
   </div>
 
-  <div id="worldMap"></div>
-
-  <script src="jquery-3.3.1.min.js"></script>
-  <script src="renderGame.js"></script>
-  <script src="moviments.js"></script>
-  <script src="fighting.js"></script>
 </body>
 </html>
