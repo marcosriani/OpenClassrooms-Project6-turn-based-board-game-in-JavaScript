@@ -1,0 +1,65 @@
+body {
+  background-image: url('../images/theStarryNight.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#worldMap {
+  position: relative;
+  width: 512px;
+  height: 512px;
+  margin: 0 auto;
+  border: 15px solid rgba(240,240,244,1);
+  border-radius: 2%;
+  margin-top: 2px;
+}
+
+.gameCell {
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+.gameCellWalkable {
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  filter: brightness(80%);
+}
+
+#weapon1,
+#weapon2,
+#weapon3,
+#weapon4 {
+  border: 1px solid rgb(237, 244, 246);
+}
+.info {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.73);
+  width: 800px;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.which-turn-it-is {
+  text-align: center;
+}
+
+.canAttack {
+  background-color: green;
+}
+.defend {
+  background-color: red;
+}
+.canAttackMap {
+  background-color: blue;
+}
+.newGame {
+  background-color: rgb(75, 219, 202);
+}
+/* #worldMap > img:nth-child(34) {
+  border: 2px dotted red;
+} */
